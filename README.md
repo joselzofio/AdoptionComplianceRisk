@@ -4,7 +4,7 @@ Version 1.0.0
 
 This MATLAB script calculates the investment thresholds, along with optimal emission and violation levels from the simulations reported in Arguedas, C., Peinado, F. and Zofío, J.L. (2023) "Incentives for Green Technology Adoption, Imperfect Compliance, and Risk Aversion".
 
-The script has been run in version R2022a of MATLAB and uses the function 'vpasolve' from the Symbolic Math Toolboox to     
+The script has been run in version R2022a of MATLAB and uses the function 'vpasolve' from the Symbolic Math Toolboox to determine optimal emissions, see equation (2) in the article.     
 
 ## Usage
 
