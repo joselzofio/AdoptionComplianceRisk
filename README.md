@@ -1,18 +1,23 @@
-# AdoptionComplianceRisk
+# Technology Adoption, Compliance and Risk Aversion with Technological Uncertainty
 
 Version 1.0.0
 
-This MATLAB script calculates the investment thresholds, along with optimal emission and violation levels from the simulations reported in Arguedas, C., Peinado, F., and Zofío, J.L. (2023) "Incentives for Green Technology Adoption, Imperfect Compliance, and Risk Aversion".
+These MATLAB scripts calculate the investment thresholds, along with optimal emission and violation levels from the simulations reported in Arguedas, C., Peinado, F., and Zofío, J.L. (2023) "Incentives for Green Technology Adoption, Imperfect Compliance, and Risk Aversion". Universidad Autónoma de Madrid. Manuscript submitted for publication.
 
-The script has been run in version R2022a of MATLAB and uses the function 'vpasolve' from the Symbolic Math Toolboox to determine optimal emissions, see equation (2) in the article.     
+The first script (Technology_Adoption_Compliance_Risk_without_Tech_Uncertainty.m) implements the simulations reported in section 3.3 of the article without technological uncertainty about the new technology.
+
+The second script implements the simulations reported in section 4 of the article enhancing the baseline model with technological uncertainty 
+about the efficiency of the new technology, resulting in either high or low abatement costs.
+
+Both scripts have been run in version R2022a of MATLAB and use the function 'vpasolve' from the Symbolic Math Toolbox to determine optimal emissions, see equation (2) in the article minimizing firms' expected disutility in terms of compliance and non-compliance (equation (1)).   
 
 ## Usage
 
-To use this script add the m-file to the MATLAB path.
+To run the scripts, add the m-file to the MATLAB path.
 
-The simulations can be perfomed with the different parametrizations of the inspection probabilities and fines for non-compliance presented in Table 1 of the article. The parameters correspoding to the tax vakue (tau), degree of risk aversion (rho) and uncertainity about the efficiency of the new technbology (alpha) can be also adjusted to replicate the different results of the article.
+The simulations can be performed with the different parametrizations of the inspection probabilities and fines for non-compliance presented in Table 1 of the article. The parameters corresponding to the tax value (tau), degree of risk aversion (rho) and uncertainty about the efficiency of the new technology (alpha) can be also adjusted.  At the end of the script, we present the parameters' values necessary to replicate all the simulations reported in the Figures of the article.
 
-The script guides the user step-by-tep on the solution of the optimization problems reported in the article. 
+The scripts guide the user step-by-step on the solution of the optimization problems reported in the article. 
 
 ## Authors
 
