@@ -1,15 +1,15 @@
-# Technology Adoption, Compliance and Risk Aversion with Technological Uncertainty
+# Technology Adoption and Compliance under Risk Aversion and Technological Uncertainty
 
-Version 1.0.0
+Version 2.0.0
 
-These MATLAB scripts calculate the investment thresholds, along with optimal emission and violation levels from the simulations reported in Arguedas, C., Peinado, F., and Zofío, J.L. (2023) "Incentives for Green Technology Adoption, Imperfect Compliance, and Risk Aversion". Universidad Autónoma de Madrid. Manuscript submitted for publication.
+These MATLAB scripts calculate the investment thresholds, along with optimal emission and violation levels from the simulations reported in Arguedas, C., Peinado, F., and Zofío, J.L. (2023) "Incentives for Green Technology Adoption and Compliance under Risk Aversion and Technological Uncertainty". Universidad Autónoma de Madrid. Manuscript submitted for publication.
 
 The first script (Technology_Adoption_Compliance_Risk_without_Tech_Uncertainty.m) implements the simulations reported in section 3.3 of the article without technological uncertainty about the new technology.
 
-The second script implements the simulations reported in section 4 of the article enhancing the baseline model with technological uncertainty 
-about the efficiency of the new technology, resulting in either high or low abatement costs.
+The second script (Technology_Adoption_Compliance_Risk_with_Tech_Uncertainty.m) implements the simulations reported in section 4 of the article enhancing the baseline model with technological uncertainty 
+about the efficiency of the new technology, which may have either high or low abatement costs. The simulations correspond to what is termed in the article as 'partial' and 'full' technological uncertainty. 
 
-Both scripts have been run in version R2022a of MATLAB and use the function 'vpasolve' from the Symbolic Math Toolbox to determine optimal emissions, see equation (2) in the article minimizing firms' expected disutility in terms of compliance and non-compliance (equation (1)).   
+Both scripts have been run in version R2023a of MATLAB and use the function 'vpasolve' from the Symbolic Math Toolbox to determine optimal emissions. For the case of technological certainty and partial technological uncertainty see equation (2) in the article, minimizing firms' expected disutility in terms of compliance and non-compliance (equation (1)). For full uncertainty it solves equations (17) and (18).  
 
 ## Usage
 
